@@ -423,7 +423,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "TeensyIrrigation.kicad_pro",
+    "filename": "I2CMultiplexer.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -504,12 +504,8 @@
       ""
     ],
     [
-      "d29d9d52-f705-4fa9-913f-9875e0c01221",
-      "TeensyMicrocontroller"
-    ],
-    [
-      "f459c47d-100b-489c-87ee-123d3bae6c42",
-      "FRAMI2C"
+      "d2172082-dc43-4fb6-b91f-e27a38705caf",
+      "I2CInput"
     ],
     [
       "9361887d-2e2f-4a76-8df4-86ce3115fd7d",
@@ -546,18 +542,6 @@
     [
       "72a26cba-1d15-4e25-9045-7a9469c21a6e",
       "I2CConnector7"
-    ],
-    [
-      "eba9e24a-38c9-4cf7-a87b-765b6bb0f2de",
-      "SP3232RS232"
-    ],
-    [
-      "635bc974-34c1-4f31-bfad-3c627a590545",
-      "SPIConnector"
-    ],
-    [
-      "4bddd956-87c4-401f-a0b6-e1c4b71049b9",
-      "SPIConnector1"
     ],
     [
       "b48fcfa8-4ed4-4ed2-b40e-520cd5d82d6e",

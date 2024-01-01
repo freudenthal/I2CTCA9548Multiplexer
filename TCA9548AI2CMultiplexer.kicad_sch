@@ -5,6 +5,51 @@
   (paper "A4")
 
   (lib_symbols
+    (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Conn_01x02" (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "connector" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Conn_01x02_1_1"
+        (rectangle (start -1.27 -2.413) (end 0 -2.667)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 0.127) (end 0 -0.127)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 1.27) (end 1.27 -3.81)
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+        (pin passive line (at -5.08 0 0) (length 3.81)
+          (name "Pin_1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -2.54 0) (length 3.81)
+          (name "Pin_2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.635 2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -333,58 +378,6 @@
         )
       )
     )
-    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+3.3V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+3.3V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+3.3V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3.3V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -494,9 +487,6 @@
   (junction (at 265.43 73.152) (diameter 0) (color 0 0 0 0)
     (uuid 6083a385-cdb0-4810-a0c0-5eb014e5d5bd)
   )
-  (junction (at 208.28 35.052) (diameter 0) (color 0 0 0 0)
-    (uuid 7710fd62-c329-44fc-8ae0-3ffc242ab021)
-  )
   (junction (at 71.882 36.83) (diameter 0) (color 0 0 0 0)
     (uuid 80c0a2c5-597a-42d0-b59c-3d9050e7a364)
   )
@@ -506,8 +496,8 @@
   (junction (at 246.38 51.562) (diameter 0) (color 0 0 0 0)
     (uuid b23ae71f-5fc3-462d-8175-4686291fecab)
   )
-  (junction (at 232.41 80.772) (diameter 0) (color 0 0 0 0)
-    (uuid b7db0deb-1529-4cee-8dda-9a5d00a34222)
+  (junction (at 59.69 69.85) (diameter 0) (color 0 0 0 0)
+    (uuid c8d07358-e4ca-4dbf-8911-6cd1b60a4e79)
   )
   (junction (at 256.54 51.562) (diameter 0) (color 0 0 0 0)
     (uuid cdccb23f-0a60-4dea-aa8e-30aded719708)
@@ -522,10 +512,6 @@
   (wire (pts (xy 139.192 45.72) (xy 146.812 45.72))
     (stroke (width 0) (type default))
     (uuid 023104d9-2488-4eb1-bdc7-2f70ebeb474c)
-  )
-  (wire (pts (xy 232.41 80.772) (xy 238.252 80.772))
-    (stroke (width 0) (type default))
-    (uuid 038b894f-fa0b-431e-a289-4c8895f442e8)
   )
   (wire (pts (xy 184.912 91.44) (xy 184.912 70.612))
     (stroke (width 0) (type default))
@@ -563,17 +549,9 @@
     (stroke (width 0) (type default))
     (uuid 159792b3-eb7c-4ec3-85eb-cd5072cacd5a)
   )
-  (wire (pts (xy 208.28 35.052) (xy 213.36 35.052))
-    (stroke (width 0) (type default))
-    (uuid 16f1728b-989c-4495-8503-5d7b272bfa67)
-  )
   (wire (pts (xy 182.88 79.502) (xy 181.102 79.502))
     (stroke (width 0) (type default))
     (uuid 17c4196d-79d2-4173-8389-37c0cfe2bcba)
-  )
-  (wire (pts (xy 208.28 29.972) (xy 208.28 35.052))
-    (stroke (width 0) (type default))
-    (uuid 1815c5b4-d1a5-4afd-a298-070f0663d3ed)
   )
   (wire (pts (xy 173.99 43.18) (xy 193.802 43.18))
     (stroke (width 0) (type default))
@@ -611,10 +589,6 @@
     (stroke (width 0) (type default))
     (uuid 30b4052b-9f1e-4bd5-9f34-ebcd7100e163)
   )
-  (wire (pts (xy 232.41 116.332) (xy 224.79 116.332))
-    (stroke (width 0) (type default))
-    (uuid 3111b3ea-569f-4d16-b91e-0777e8f1d952)
-  )
   (wire (pts (xy 103.632 74.93) (xy 143.002 74.93))
     (stroke (width 0) (type default))
     (uuid 319c6602-23be-4476-a149-d9124965cb5a)
@@ -627,10 +601,6 @@
     (stroke (width 0) (type default))
     (uuid 38036c1e-8aac-4b86-8e1d-079b69f16b4c)
   )
-  (wire (pts (xy 208.28 19.05) (xy 208.28 22.352))
-    (stroke (width 0) (type default))
-    (uuid 3972333c-a251-4dc8-9b19-7b50ebafe596)
-  )
   (wire (pts (xy 200.66 68.072) (xy 182.88 68.072))
     (stroke (width 0) (type default))
     (uuid 3e0ea28e-8285-40ee-8c92-b7071fa7cebc)
@@ -639,7 +609,7 @@
     (stroke (width 0) (type default))
     (uuid 3ea817d4-5696-4aaf-9189-2014357bb5f8)
   )
-  (wire (pts (xy 213.36 35.052) (xy 213.36 37.592))
+  (wire (pts (xy 213.36 32.004) (xy 213.36 37.592))
     (stroke (width 0) (type default))
     (uuid 40cb8e83-0d4a-483d-8955-426ca40abb07)
   )
@@ -779,10 +749,6 @@
     (stroke (width 0) (type default))
     (uuid 78c576fc-cadf-487f-9e7c-177db576f8af)
   )
-  (wire (pts (xy 201.422 35.052) (xy 208.28 35.052))
-    (stroke (width 0) (type default))
-    (uuid 7a66041f-8c85-4af1-b36a-d8f7ef45d1fd)
-  )
   (wire (pts (xy 138.43 85.09) (xy 138.43 107.442))
     (stroke (width 0) (type default))
     (uuid 7eaf9bf3-56e9-435f-b2bc-46d5f9a0fcb0)
@@ -847,6 +813,10 @@
     (stroke (width 0) (type default))
     (uuid 9dbc5ba4-2600-4b86-9ff8-a889f60f1540)
   )
+  (wire (pts (xy 59.69 63.754) (xy 59.69 69.85))
+    (stroke (width 0) (type default))
+    (uuid a9e9f60c-d2d6-431a-84a6-ff192ce08895)
+  )
   (wire (pts (xy 226.06 68.072) (xy 246.38 68.072))
     (stroke (width 0) (type default))
     (uuid ab455c64-e449-419a-92c9-1d84f6e64ee1)
@@ -859,11 +829,15 @@
     (stroke (width 0) (type default))
     (uuid b4ef8686-c68e-4fde-8dfd-a317d3dc60fa)
   )
+  (wire (pts (xy 71.882 36.83) (xy 59.69 36.83))
+    (stroke (width 0) (type default))
+    (uuid b723e946-f397-4934-800e-828292af6c56)
+  )
   (wire (pts (xy 103.632 72.39) (xy 144.78 72.39))
     (stroke (width 0) (type default))
     (uuid bcdfe098-cc0b-4e70-b685-5b79d0a3d2e7)
   )
-  (wire (pts (xy 79.502 69.85) (xy 83.312 69.85))
+  (wire (pts (xy 53.086 69.85) (xy 59.69 69.85))
     (stroke (width 0) (type default))
     (uuid bd037cf1-f1dc-4209-bde9-d6f46970d39a)
   )
@@ -891,17 +865,9 @@
     (stroke (width 0) (type default))
     (uuid c403a609-4bd2-4f17-a672-fd11fbf5fd08)
   )
-  (wire (pts (xy 201.422 29.972) (xy 201.422 35.052))
-    (stroke (width 0) (type default))
-    (uuid c40ac648-4fa7-4220-83ce-bef594680bf4)
-  )
   (wire (pts (xy 265.43 90.932) (xy 265.43 87.63))
     (stroke (width 0) (type default))
     (uuid c4371324-10b1-40c6-a729-02a2a81fe769)
-  )
-  (wire (pts (xy 232.41 80.772) (xy 232.41 116.332))
-    (stroke (width 0) (type default))
-    (uuid c7886327-3b3a-4402-b248-550ee3eb024b)
   )
   (wire (pts (xy 246.38 90.932) (xy 256.54 90.932))
     (stroke (width 0) (type default))
@@ -923,6 +889,10 @@
     (stroke (width 0) (type default))
     (uuid cec13ef9-6af8-43ff-b6a8-3d2a6b9fe8f1)
   )
+  (wire (pts (xy 59.69 69.85) (xy 83.312 69.85))
+    (stroke (width 0) (type default))
+    (uuid cfde7a35-da17-482c-9b48-4737bd8d9537)
+  )
   (wire (pts (xy 246.38 90.932) (xy 246.38 93.98))
     (stroke (width 0) (type default))
     (uuid d0b8556c-f062-48af-9c6d-ece2d77c5845)
@@ -935,13 +905,13 @@
     (stroke (width 0) (type default))
     (uuid d94e3483-6daa-4d0b-888b-270883ceac76)
   )
+  (wire (pts (xy 54.61 72.39) (xy 54.61 73.914))
+    (stroke (width 0) (type default))
+    (uuid ddaa2f3e-10bf-4435-b97a-791122324e01)
+  )
   (wire (pts (xy 246.38 51.562) (xy 256.54 51.562))
     (stroke (width 0) (type default))
     (uuid dfe08ddb-d631-443d-a5a9-02cdc74c1ee5)
-  )
-  (wire (pts (xy 224.79 116.332) (xy 224.79 113.792))
-    (stroke (width 0) (type default))
-    (uuid e1d11f20-226c-47d8-a351-4640a5ecdb3e)
   )
   (wire (pts (xy 256.54 90.932) (xy 265.43 90.932))
     (stroke (width 0) (type default))
@@ -967,9 +937,9 @@
     (stroke (width 0) (type default))
     (uuid e4984251-675c-4102-b00e-a069d32a0c6c)
   )
-  (wire (pts (xy 201.422 19.05) (xy 201.422 22.352))
+  (wire (pts (xy 53.086 72.39) (xy 54.61 72.39))
     (stroke (width 0) (type default))
-    (uuid e9adc2d8-fb80-4db8-a943-e6cb1d30fd69)
+    (uuid e5f091bc-7da7-4126-895f-c2f9b54cb93a)
   )
   (wire (pts (xy 141.732 77.47) (xy 103.632 77.47))
     (stroke (width 0) (type default))
@@ -983,9 +953,9 @@
     (stroke (width 0) (type default))
     (uuid f4a86afb-5632-47aa-ae25-6d882280be1f)
   )
-  (wire (pts (xy 224.79 102.87) (xy 224.79 106.172))
+  (wire (pts (xy 59.69 36.83) (xy 59.69 56.134))
     (stroke (width 0) (type default))
-    (uuid f65b6e45-e396-4762-9e70-6ef5a41aedd8)
+    (uuid f5caa29d-f2b5-4fcf-8ef4-d830241053ab)
   )
   (wire (pts (xy 103.632 57.15) (xy 136.652 57.15))
     (stroke (width 0) (type default))
@@ -1007,7 +977,7 @@
     (stroke (width 0) (type default))
     (uuid fe3180bd-06df-49b1-86db-60277fe44410)
   )
-  (wire (pts (xy 226.06 80.772) (xy 232.41 80.772))
+  (wire (pts (xy 226.06 80.772) (xy 238.252 80.772))
     (stroke (width 0) (type default))
     (uuid ff5975fa-c43b-44cf-9acd-be1117f06bbd)
   )
@@ -1048,10 +1018,6 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid cba3a3fa-d153-4cc4-8310-03e9b1ec0a1a)
   )
-  (hierarchical_label "~{RESET}I2C" (shape input) (at 79.502 69.85 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid d9a346bc-ff1f-42cd-bd0c-17b03b2e94a4)
-  )
 
   (symbol (lib_id "Device:C") (at 223.012 42.672 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
@@ -1071,7 +1037,7 @@
     (pin "1" (uuid 1a4be6e4-140f-40d0-a421-4d8e1e0f69d5))
     (pin "2" (uuid 58ca465a-2867-4437-9e51-421c540cf8a9))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc3a3e51-4635-4b22-a0d3-1bf675a1f052"
           (reference "C36") (unit 1)
         )
@@ -1121,61 +1087,12 @@
     (pin "1" (uuid 6944323e-b440-4e96-a2c2-aef4dcf201c8))
     (pin "2" (uuid 7291bb55-7da8-4317-87ce-eeca36dd9094))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc"
           (reference "R33") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d"
           (reference "R7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 224.79 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1ceba737-1ec9-4158-a28b-42b7b465a7e8)
-    (property "Reference" "#PWR0137" (at 224.79 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 224.79 97.79 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 224.79 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 224.79 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b5cc801a-c537-4008-84e8-1c4e379eaf62))
-    (instances
-      (project "TeensyIrrigation"
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc3a3e51-4635-4b22-a0d3-1bf675a1f052"
-          (reference "#PWR0137") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/d07e285c-d4f6-4bbb-bb5c-dfaf9a2ef7da"
-          (reference "#PWR0144") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/26a8e56a-5e82-480b-9e15-4dcd38718087"
-          (reference "#PWR0151") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc1f4fa8-9f10-496a-a97d-aeec54cf6ab4"
-          (reference "#PWR0158") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bb50843c-28c0-432d-89f3-869089793beb"
-          (reference "#PWR0165") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/c6284ad9-3e78-4c87-8a02-21063a193d87"
-          (reference "#PWR0172") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/ca81829a-f793-4650-8293-1caa8c896ccf"
-          (reference "#PWR0179") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/72a26cba-1d15-4e25-9045-7a9469c21a6e"
-          (reference "#PWR0186") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d"
-          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -1199,7 +1116,7 @@
     (pin "1" (uuid fa8bb38b-0624-428a-bff4-e876d2bf3b4f))
     (pin "2" (uuid 29cf6ad6-b2e5-43a5-93ee-cc311b9cd016))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc"
           (reference "R35") (unit 1)
         )
@@ -1227,7 +1144,7 @@
     )
     (pin "1" (uuid e30d49ac-83cd-4f10-9a28-90c0d57ce1aa))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc"
           (reference "#PWR03") (unit 1)
         )
@@ -1256,7 +1173,7 @@
     (pin "1" (uuid e620a949-fe04-467f-a77e-b7f1de5d38dc))
     (pin "2" (uuid c7899a3c-5844-4ec6-b3d9-137df24dee73))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc3a3e51-4635-4b22-a0d3-1bf675a1f052"
           (reference "C36") (unit 1)
         )
@@ -1288,55 +1205,6 @@
     )
   )
 
-  (symbol (lib_id "power:+3.3V") (at 208.28 19.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2f5c7f50-15ca-46b6-9cf4-e9aa253a31e7)
-    (property "Reference" "#PWR0137" (at 208.28 22.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 208.28 13.97 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 208.28 19.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 208.28 19.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2158aea2-e919-4871-8549-7948d54c2947))
-    (instances
-      (project "TeensyIrrigation"
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc3a3e51-4635-4b22-a0d3-1bf675a1f052"
-          (reference "#PWR0137") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/d07e285c-d4f6-4bbb-bb5c-dfaf9a2ef7da"
-          (reference "#PWR0144") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/26a8e56a-5e82-480b-9e15-4dcd38718087"
-          (reference "#PWR0151") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc1f4fa8-9f10-496a-a97d-aeec54cf6ab4"
-          (reference "#PWR0158") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bb50843c-28c0-432d-89f3-869089793beb"
-          (reference "#PWR0165") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/c6284ad9-3e78-4c87-8a02-21063a193d87"
-          (reference "#PWR0172") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/ca81829a-f793-4650-8293-1caa8c896ccf"
-          (reference "#PWR0179") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/72a26cba-1d15-4e25-9045-7a9469c21a6e"
-          (reference "#PWR0186") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d"
-          (reference "#PWR014") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 246.38 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 314fbdbd-53f7-4ac9-a20a-805cd58f9757)
@@ -1355,7 +1223,7 @@
     (pin "1" (uuid 746b2ee5-e44a-49cf-9070-b1a2b160aa24))
     (pin "2" (uuid 113d8bf7-652b-481c-8ef1-7ecdd8b8e770))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc"
           (reference "R32") (unit 1)
         )
@@ -1366,54 +1234,50 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 224.79 109.982 180) (unit 1)
+  (symbol (lib_id "power:GND") (at 54.61 73.914 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3211e10c-b4f8-46fd-8540-e205abab6ee9)
-    (property "Reference" "R41" (at 227.33 108.712 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10kΩ" (at 227.33 111.252 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 226.568 109.982 90)
+    (uuid 3f43096a-4d0e-44d1-867c-80a4689400d7)
+    (property "Reference" "#PWR0124" (at 54.61 80.264 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 224.79 109.982 0)
+    (property "Value" "GND" (at 54.61 78.994 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 54.61 73.914 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3bf5f748-3cf5-406f-a311-ed888a1191c2))
-    (pin "2" (uuid 2f536393-8160-497a-8a0a-ffa22e959681))
+    (property "Datasheet" "" (at 54.61 73.914 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 74b6f95f-a74b-4707-a7a2-2f7341efe056))
     (instances
-      (project "TeensyIrrigation"
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc"
-          (reference "R41") (unit 1)
-        )
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc3a3e51-4635-4b22-a0d3-1bf675a1f052"
-          (reference "R38") (unit 1)
+          (reference "#PWR0124") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/d07e285c-d4f6-4bbb-bb5c-dfaf9a2ef7da"
-          (reference "R40") (unit 1)
+          (reference "#PWR0133") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/26a8e56a-5e82-480b-9e15-4dcd38718087"
-          (reference "R42") (unit 1)
+          (reference "#PWR0140") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc1f4fa8-9f10-496a-a97d-aeec54cf6ab4"
-          (reference "R44") (unit 1)
+          (reference "#PWR0147") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bb50843c-28c0-432d-89f3-869089793beb"
-          (reference "R46") (unit 1)
+          (reference "#PWR0154") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/c6284ad9-3e78-4c87-8a02-21063a193d87"
-          (reference "R48") (unit 1)
+          (reference "#PWR0161") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/ca81829a-f793-4650-8293-1caa8c896ccf"
-          (reference "R50") (unit 1)
+          (reference "#PWR0168") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/72a26cba-1d15-4e25-9045-7a9469c21a6e"
-          (reference "R52") (unit 1)
+          (reference "#PWR0175") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d"
-          (reference "R4") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -1437,12 +1301,38 @@
     (pin "1" (uuid dcbe56ab-abea-46af-9b36-4318681567d9))
     (pin "2" (uuid f829e964-2d44-4913-a3f4-c03d12158ded))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc"
           (reference "R36") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d"
           (reference "R10") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 48.006 72.39 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 7ab8321b-2bfe-40d1-8b79-0a79a187b08a)
+    (property "Reference" "J14" (at 48.006 63.5 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "~{RESET}" (at 48.006 66.04 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 48.006 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 48.006 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f3bce5bf-142a-467d-874d-0f7786e81ab8))
+    (pin "2" (uuid b16159ed-3e4a-4b90-b75a-2da3ce16121d))
+    (instances
+      (project "I2CMultiplexer"
+        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d"
+          (reference "J14") (unit 1)
         )
       )
     )
@@ -1465,7 +1355,7 @@
     )
     (pin "1" (uuid 3b51e144-2d63-4fa7-93a4-a058167ef2ed))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc3a3e51-4635-4b22-a0d3-1bf675a1f052"
           (reference "#PWR0124") (unit 1)
         )
@@ -1514,7 +1404,7 @@
     )
     (pin "1" (uuid a58cdbe8-0702-4958-ac54-891a665b0184))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc"
           (reference "#PWR03") (unit 1)
         )
@@ -1565,7 +1455,7 @@
     (pin "8" (uuid a794f93a-2309-4db4-8301-112c57c9ee62))
     (pin "9" (uuid 6f1c5d7e-0edd-4a34-9037-cd37be779173))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d"
           (reference "U2") (unit 1)
         )
@@ -1573,54 +1463,30 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 208.28 26.162 180) (unit 1)
+  (symbol (lib_id "Device:R") (at 59.69 59.944 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid a40bfc32-8d23-4e7b-bbf3-f29fa390626a)
-    (property "Reference" "R41" (at 210.185 24.892 0)
-      (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 9a10146a-e8e4-4b0b-b3c6-4caed22722ba)
+    (property "Reference" "R32" (at 61.595 58.674 0)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0Ω" (at 210.185 27.432 0)
-      (effects (font (size 1.27 1.27)) (justify right))
+    (property "Value" "10kΩ" (at 61.595 61.214 0)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 210.058 26.162 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 57.912 59.944 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 208.28 26.162 0)
+    (property "Datasheet" "~" (at 59.69 59.944 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid aed096a1-867e-48f8-8863-5e0e85749f21))
-    (pin "2" (uuid 89aaea15-4441-48e2-bc71-78553afd9282))
+    (pin "1" (uuid 661371d5-7ce3-46c7-bf21-0ccd6880c930))
+    (pin "2" (uuid d51d7114-f406-44be-b7e2-e16460d66a24))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc"
-          (reference "R41") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc3a3e51-4635-4b22-a0d3-1bf675a1f052"
-          (reference "R38") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/d07e285c-d4f6-4bbb-bb5c-dfaf9a2ef7da"
-          (reference "R40") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/26a8e56a-5e82-480b-9e15-4dcd38718087"
-          (reference "R42") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc1f4fa8-9f10-496a-a97d-aeec54cf6ab4"
-          (reference "R44") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bb50843c-28c0-432d-89f3-869089793beb"
-          (reference "R46") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/c6284ad9-3e78-4c87-8a02-21063a193d87"
-          (reference "R48") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/ca81829a-f793-4650-8293-1caa8c896ccf"
-          (reference "R50") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/72a26cba-1d15-4e25-9045-7a9469c21a6e"
-          (reference "R52") (unit 1)
+          (reference "R32") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d"
-          (reference "R3") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -1662,7 +1528,7 @@
     (pin "8" (uuid bb2cf3b1-010f-41cd-ab60-b1ef1e627240))
     (pin "9" (uuid 61492737-e35f-404f-8e20-f73753718f73))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d"
           (reference "U3") (unit 1)
         )
@@ -1688,7 +1554,7 @@
     (pin "1" (uuid d5f988e3-ddb2-432d-8c60-c466a7d08aaa))
     (pin "2" (uuid b92cbeff-2f14-4114-9c11-0f2168b81277))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc"
           (reference "R31") (unit 1)
         )
@@ -1699,13 +1565,13 @@
     )
   )
 
-  (symbol (lib_id "power:+3.3V") (at 71.882 33.02 0) (unit 1)
+  (symbol (lib_id "power:+5V") (at 71.882 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid bb73747f-8071-486c-aea8-144e49eea29f)
-    (property "Reference" "#PWR0123" (at 71.882 36.83 0)
+    (uuid bd936fcf-15c2-42e3-b62a-47a1e72dcee7)
+    (property "Reference" "#PWR0136" (at 71.882 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 71.882 27.94 0)
+    (property "Value" "+5V" (at 71.882 27.94 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 71.882 33.02 0)
@@ -1714,35 +1580,35 @@
     (property "Datasheet" "" (at 71.882 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f45242a9-4c41-4559-a343-789ff496fea2))
+    (pin "1" (uuid 684a2301-66ab-4526-b513-5ec1659cab8c))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc3a3e51-4635-4b22-a0d3-1bf675a1f052"
-          (reference "#PWR0123") (unit 1)
+          (reference "#PWR0136") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/d07e285c-d4f6-4bbb-bb5c-dfaf9a2ef7da"
-          (reference "#PWR0130") (unit 1)
+          (reference "#PWR0143") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/26a8e56a-5e82-480b-9e15-4dcd38718087"
-          (reference "#PWR0137") (unit 1)
+          (reference "#PWR0150") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc1f4fa8-9f10-496a-a97d-aeec54cf6ab4"
-          (reference "#PWR0144") (unit 1)
+          (reference "#PWR0157") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bb50843c-28c0-432d-89f3-869089793beb"
-          (reference "#PWR0151") (unit 1)
+          (reference "#PWR0164") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/c6284ad9-3e78-4c87-8a02-21063a193d87"
-          (reference "#PWR0158") (unit 1)
+          (reference "#PWR0171") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/ca81829a-f793-4650-8293-1caa8c896ccf"
-          (reference "#PWR0165") (unit 1)
+          (reference "#PWR0178") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/72a26cba-1d15-4e25-9045-7a9469c21a6e"
-          (reference "#PWR0172") (unit 1)
+          (reference "#PWR0185") (unit 1)
         )
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -1765,7 +1631,7 @@
     )
     (pin "1" (uuid cadd0b5f-05dd-4e3e-8227-5a8acb74835a))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d"
           (reference "#PWR012") (unit 1)
         )
@@ -1773,24 +1639,24 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 201.422 19.05 0) (unit 1)
+  (symbol (lib_id "power:+5V") (at 213.36 32.004 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid de6ac5fd-42dd-4aa8-ba29-2da79782f228)
-    (property "Reference" "#PWR0136" (at 201.422 22.86 0)
+    (property "Reference" "#PWR0136" (at 213.36 35.814 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 201.422 13.97 0)
+    (property "Value" "+5V" (at 213.36 26.924 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 201.422 19.05 0)
+    (property "Footprint" "" (at 213.36 32.004 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 201.422 19.05 0)
+    (property "Datasheet" "" (at 213.36 32.004 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9276c696-e52f-4bea-893e-b3232a91e43e))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc3a3e51-4635-4b22-a0d3-1bf675a1f052"
           (reference "#PWR0136") (unit 1)
         )
@@ -1822,59 +1688,6 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 201.422 26.162 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid e2e4f981-6d25-4e95-8038-9d2252bc1104)
-    (property "Reference" "R41" (at 203.327 24.892 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "0Ω" (at 203.327 27.432 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 203.2 26.162 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 201.422 26.162 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ddb07be1-ca19-4b09-ae53-1e1e6021df1a))
-    (pin "2" (uuid a026b88c-3df9-449a-bef2-c1c702fb9865))
-    (instances
-      (project "TeensyIrrigation"
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc"
-          (reference "R41") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc3a3e51-4635-4b22-a0d3-1bf675a1f052"
-          (reference "R37") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/d07e285c-d4f6-4bbb-bb5c-dfaf9a2ef7da"
-          (reference "R39") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/26a8e56a-5e82-480b-9e15-4dcd38718087"
-          (reference "R41") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bc1f4fa8-9f10-496a-a97d-aeec54cf6ab4"
-          (reference "R43") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/bb50843c-28c0-432d-89f3-869089793beb"
-          (reference "R45") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/c6284ad9-3e78-4c87-8a02-21063a193d87"
-          (reference "R47") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/ca81829a-f793-4650-8293-1caa8c896ccf"
-          (reference "R49") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d/72a26cba-1d15-4e25-9045-7a9469c21a6e"
-          (reference "R51") (unit 1)
-        )
-        (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d"
-          (reference "R2") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 256.54 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f7a9e3c0-119f-4f24-bd02-c795fdb15788)
@@ -1893,7 +1706,7 @@
     (pin "1" (uuid 6f95e2c6-427e-48de-9c5d-9b77b1a73285))
     (pin "2" (uuid 6bd1521d-c2eb-4010-80b4-5c98e9ea73eb))
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc"
           (reference "R34") (unit 1)
         )
@@ -1927,7 +1740,7 @@
       (uuid b0a614dc-6ba9-477d-839e-37459eb3a735)
     )
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d" (page "48"))
       )
     )
@@ -1956,7 +1769,7 @@
       (uuid 867c7950-7d0f-48db-9861-7ded5f508015)
     )
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d" (page "53"))
       )
     )
@@ -1985,7 +1798,7 @@
       (uuid 5bd76720-9078-4053-8f11-57727c05e71c)
     )
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d" (page "50"))
       )
     )
@@ -2014,7 +1827,7 @@
       (uuid 0f6c86fe-415f-4b19-aafc-4f0e8444b043)
     )
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d" (page "49"))
       )
     )
@@ -2043,7 +1856,7 @@
       (uuid e45e80fe-9441-4b00-8f03-4954daa9e3c9)
     )
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d" (page "46"))
       )
     )
@@ -2072,7 +1885,7 @@
       (uuid ca61fc7b-68fb-4fd2-a193-5a2f89c15871)
     )
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d" (page "51"))
       )
     )
@@ -2101,7 +1914,7 @@
       (uuid 67317215-553b-4fd1-b11c-e489952969ef)
     )
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d" (page "52"))
       )
     )
@@ -2130,7 +1943,7 @@
       (uuid 9544bf84-af01-464d-94d2-8cdc3f8f4205)
     )
     (instances
-      (project "TeensyIrrigation"
+      (project "I2CMultiplexer"
         (path "/c65a281d-6732-4d62-97b7-333427e1d7dc/9361887d-2e2f-4a76-8df4-86ce3115fd7d" (page "47"))
       )
     )
